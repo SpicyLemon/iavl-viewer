@@ -444,7 +444,7 @@ var (
 	moduleRe   = regexp.MustCompile(`^s/k:(\w+)/`)
 	miscNumRe  = regexp.MustCompile(`^s/(\d+)$`)
 	miscWordRe = regexp.MustCompile(`^s/(\w+)$`)
-	fWordRe    = regexp.MustCompile(`^([fm][a-zA-Z]+)`)
+	fWordRe    = regexp.MustCompile(`^([fm][a-zA-Z_-]+)`)
 )
 
 // splitKey splits the key into the module and a prefix.
